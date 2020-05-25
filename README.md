@@ -13,7 +13,7 @@
 - 监测CPU使用率/内存使用/硬盘使用/网络IO使用/带宽使用
 - 监测指定服务运行状态
 
-![demo](.\doc\demo.png)
+![demo](https://github.com/BakaErii/GOSS/blob/master/doc/demo.png)
 
 ## 部署
 
