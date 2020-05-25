@@ -23,7 +23,7 @@
 
   Step 2.在服务器上首次运行，修改配置文件`./goss-server-config.json`(以下为服务端配置文件模板)
 
-```json
+```
 {
     "secKey": "MUST CHANGE THIS!", // 通讯密钥, 自定义修改
     "port": 80,	// GOSS服务端的端口
@@ -40,7 +40,7 @@
 
   Step 3.修改内置前端的配置文件`./front/config.js`(不启用忽略此步)
 
-```json
+```
 window.g = {
 	apiUrl : "http://127.0.0.1:1551", // 后端API的地址
 	timeDuration : 5, // 获取服务器状态的时间间隔, 秒
@@ -52,7 +52,7 @@ window.g = {
 
   Step 5.首次运行修改配置文件，或者将已经修改过的配置文件放入直接启动
 
-```json
+```
 {
     "secKey": "This is your server's secret key", // 通讯密钥, 自定义修改
     "name": "Client's name (UNIQUE)", // 客户端的名称, 唯一
@@ -114,9 +114,9 @@ reportInfo.ip := ctx.RemoteAddr()
 
 - POST方法 客户端回报状态 Report `/report`
 
-    ```json
+    ```
     {
-        SecKey             string          `json:"secKey"` // 通讯密钥
+      SecKey             string          `json:"secKey"` // 通讯密钥
     	Name               string          `json:"name"` // 客户端名称
     	Description        string          `json:"description"` // 客户端描述
     	CpuUsage           int             `json:"cpuUsage"` // CPU使用率
@@ -134,7 +134,7 @@ reportInfo.ip := ctx.RemoteAddr()
 
 - POST方法 获取服务端中的客户端信息 Status `/status`
 
-    ```json
+    ```
     {
         status : [stauts]
     }
